@@ -73,16 +73,16 @@ skyDrop.addEventListener('change', () => {
 
 });
 
-sloganButton.addEventListener('change', () => {
+/* sloganButton.addEventListener('change', () => {
   // get the value of the head dropdown
     const newSlogan = sloganInput.value;
 
     slogans.push(newSlogan);
 
     sloganInput.value = '';
-    console.log(sloganInput.value);
   
 
 
 });
 
+*/
