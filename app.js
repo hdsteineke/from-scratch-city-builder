@@ -36,6 +36,38 @@ castleDrop.addEventListener('change', () => {
 });
 
 
+waterDrop.addEventListener('change', () => {
+  // get the value of the head dropdown
+    const waterType = waterDrop.value;
+
+  // increment the head change count state
+    waterCount++;
+  
+  // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
+    //headEl.style.backgroundImage = `url("./assets/${headType}-head.png")`;
+  
+    waterImg.src = `./assets/${waterType}.png`;
+
+  // update the stats to show the new count (call displayStats() to do this work)
+
+});
+
+
+skyDrop.addEventListener('change', () => {
+  // get the value of the head dropdown
+    const skyType = skyDrop.value;
+
+  // increment the head change count state
+    skyCount++;
+  
+  // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
+    //headEl.style.backgroundImage = `url("./assets/${headType}-head.png")`;
+  
+    skyImg.src = `./assets/${skyType}.png`;
+
+  // update the stats to show the new count (call displayStats() to do this work)
+
+});
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
