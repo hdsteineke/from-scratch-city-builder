@@ -22,12 +22,7 @@
     </header>
     <main>
         <div class="top">
-            <!-- <div class="city-images">
-                <img class="images" id="castle-img" src="assets/castle-1.PNG">
-                <img class="images" id="water-img" src="assets/water-1.PNG">
-                <img class="images" id="sky-img" src="assets/sky-1.PNG">
 
-            </div> -->
             <div class="dropdowns">
                 <label>Castles
                 <select class="pickers" id="castle-dropdown">
@@ -52,6 +47,21 @@
                     <option value="sky-3">Sky 3</option>
                 </select>
                 </label>
+
+
+                <label id="city-label">
+                    City Name:
+                    <input id="city-input"/>
+                    <button id="city-button">Add city</button>
+                </label>
+
+
+                <label id="slogan-label">
+                    Add a slogan
+                    <input id="slogan-input"/>
+                    <button id="slogan-button">Add slogan</button>
+                </label>
+
                 <p id="report"></p>
                 <div class="city-images">
                     <img class="images" id="castle-img" src="assets/castle-1.PNG">
@@ -60,7 +70,7 @@
     
                 </div>
                 <div id="welcome">
-                    <h1>Welcome to <span id="city-name-here">Narnia</span>
+                    <h1>Welcome to <span id="city-name-here"></span>!
                     </h1>
 
                 </div>
@@ -80,11 +90,6 @@
             </div>
 
 
-            <label>
-                Add a slogan
-                <input id="slogan-input"/>
-                <button id="slogan-button">Add slogan</button>
-            </label>
 
             <div id="stats">
                 <!-- <p id="report"></p> -->

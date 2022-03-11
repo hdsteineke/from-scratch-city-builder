@@ -11,12 +11,18 @@ const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 const sloganDisplay = document.getElementById('show-slogans');
 
+const cityInput = document.getElementById('city-input');
+const cityButton = document.getElementById('city-button');
+const cityNameEl = document.getElementById('city-name-here')
+
 const reportChanges = document.getElementById('report');
 
 // let state
 let castleCount = 0;
 let waterCount = 0;
 let skyCount = 0;
+
+let cityName = '';
 
 
 let slogans = [];
@@ -90,6 +96,13 @@ sloganButton.addEventListener('click', () => {
   
 
 });
+
+cityButton.addEventListener('click', () => {
+    cityNameEl.textContent = cityInput.value;
+  
+});
+
+
 
 function showSlogans() {
 
