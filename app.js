@@ -1,4 +1,4 @@
-// import functions and grab DOM elements
+
 const castleDrop = document.getElementById('castle-dropdown');
 const waterDrop = document.getElementById('water-dropdown');
 const skyDrop = document.getElementById('sky-dropdown');
@@ -17,76 +17,53 @@ const cityNameEl = document.getElementById('city-name-here');
 
 const reportChanges = document.getElementById('report');
 
-// let state
+
+
 let castleCount = 0;
 let waterCount = 0;
 let skyCount = 0;
 
 let slogans = [];
 
-let castles = [];
-let water = [];
-let sky = [];
 
 
-// set event listeners 
 castleDrop.addEventListener('change', () => {
-  // get the value of the head dropdown
     const castleType = castleDrop.value;
 
-  // increment the head change count state
     castleCount++;
-  
-  // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-    //headEl.style.backgroundImage = `url("./assets/${headType}-head.png")`;
-  
+
     castleImg.src = `./assets/${castleType}.png`;
 
-  // update the stats to show the new count (call displayStats() to do this work)
     displayStats();
 
 });
 
 
 waterDrop.addEventListener('change', () => {
-  // get the value of the head dropdown
     const waterType = waterDrop.value;
 
-  // increment the head change count state
     waterCount++;
-  
-  // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-    //headEl.style.backgroundImage = `url("./assets/${headType}-head.png")`;
   
     waterImg.src = `./assets/${waterType}.png`;
 
-  // update the stats to show the new count (call displayStats() to do this work)
     displayStats();
 
 });
 
 
 skyDrop.addEventListener('change', () => {
-  // get the value of the head dropdown
     const skyType = skyDrop.value;
 
-  // increment the head change count state
     skyCount++;
-  
-  // update the dom for the head (use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
-    //headEl.style.backgroundImage = `url("./assets/${headType}-head.png")`;
   
     skyImg.src = `./assets/${skyType}.png`;
 
-  // update the stats to show the new count (call displayStats() to do this work)
     displayStats();
 
 });
 
 
-
 sloganButton.addEventListener('click', () => {
-
     const newSlogan = sloganInput.value;
 
     slogans.push(newSlogan);
@@ -94,7 +71,6 @@ sloganButton.addEventListener('click', () => {
     sloganInput.value = '';
 
     showSlogans();
-
   
 
 });
@@ -105,9 +81,7 @@ cityButton.addEventListener('click', () => {
 });
 
 
-
 function showSlogans() {
-
     sloganDisplay.textContent = '';
 
     for (let slogan of slogans) {
@@ -118,11 +92,13 @@ function showSlogans() {
 
         sloganDisplay.append(sloganP);
     }
-
 }
 
 function displayStats() {
-
     reportChanges.textContent = `You have changed your castle ${castleCount} times, your water ${waterCount} times, and your sky ${skyCount} times.`;
 
 }
+
+
+
+
