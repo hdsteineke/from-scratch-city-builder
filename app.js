@@ -92,11 +92,11 @@ function showSlogans() {
 
     for (let slogan of slogans) {
       
-        const sloganDiv = document.createElement('div');
-        sloganDiv.classList.add('slogan');
-        sloganDiv.textContent = slogan;
+        const sloganP = document.createElement('p');
+        sloganP.classList.add('slogan');
+        sloganP.textContent = slogan;
 
-        sloganDisplay.append(sloganDiv);
+        sloganDisplay.append(sloganP);
     }
 
 }
