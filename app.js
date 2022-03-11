@@ -12,6 +12,11 @@ const sloganButton = document.getElementById('slogan-button');
 const sloganDisplay = document.getElementById('show-slogans');
 
 // let state
+let castleCount = 0;
+let waterCount = 0;
+let skyCount = 0;
+
+let slogans = [];
 
 // set event listeners 
   // get user input
