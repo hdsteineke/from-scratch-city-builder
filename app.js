@@ -6,11 +6,11 @@ const skyDrop = document.getElementById('sky-dropdown');
 const castleImg = document.getElementById('castle-img');
 const waterImg = document.getElementById('water-img');
 const skyImg = document.getElementById('sky-img');
-
+/* 
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 
-/* Commenting out my unused variables for now to pass CI until I complete my assignment
+Commenting out my unused variables for now to pass CI until I complete my assignment
 
 const sloganDisplay = document.getElementById('show-slogans');
 
@@ -20,7 +20,7 @@ let waterCount = 0;
 let skyCount = 0;
 */
 
-let slogans = [];
+/* let slogans = [];
 
 // set event listeners 
 castleDrop.addEventListener('change', () => {
