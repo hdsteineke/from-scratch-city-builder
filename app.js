@@ -68,6 +68,17 @@ skyDrop.addEventListener('change', () => {
   // update the stats to show the new count (call displayStats() to do this work)
 
 });
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+sloganButton.addEventListener('change', () => {
+  // get the value of the head dropdown
+    const newSlogan = sloganInput.value;
+
+    slogans.push(newSlogan);
+
+    sloganInput.value = '';
+    console.log(sloganInput.value);
+  
+
+
+});
+
