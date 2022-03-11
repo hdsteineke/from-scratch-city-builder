@@ -30,7 +30,7 @@ Additional considerations:
 MY PLAN:
 - Draw wireframe
 - Create HTML elements I need:
-  - <select> with 3 <options>
+  - <select> with 3 <options> (x3 for each category: castle, water, sky)
   - 3 img divs
   - 1 input field for slogans
   - 1 button for submitting slogans
