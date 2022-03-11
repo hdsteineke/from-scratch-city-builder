@@ -24,3 +24,29 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+
+MY PLAN:
+- Draw wireframe
+- Create HTML elements I need:
+  - <select> with 3 <options>
+  - 3 img divs
+  - 1 input field for slogans
+  - 1 button for submitting slogans
+  - 1 <p> for displaying slogans
+  - 1 <p> for displaying count stats for number of times photos were changed
+
+- grab DOM elements in app.js
+- set state for counting number of IMG changes
+- create event listeners for:
+  - 3 dropdowns
+  - 1 input
+  - 1 button
+
+- validate that event listeners respond to user
+- get dropdown images to change when selected
+- increment changes in event listeners
+- write function to display change Stats to user
+- create an empty array that user can add slogans to
+- write function that displays array of slogans to user
+  
