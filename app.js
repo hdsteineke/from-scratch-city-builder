@@ -78,10 +78,6 @@ sloganInput.addEventListener('input', () => {
     slogans.push(newSlogan);
 
 
-    console.log(newSlogan);
-
-
-
 });
 
 
@@ -94,8 +90,15 @@ sloganButton.addEventListener('click', () => {
 
     sloganInput.value = ' ';
 
-    console.log('click');
+    showSlogans();
+
+    console.log(newSlogan);
   
 
-
 });
+
+function showSlogans() {
+
+    sloganDisplay.textContent = '';
+
+}
