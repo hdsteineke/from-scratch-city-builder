@@ -11,6 +11,8 @@ const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
 const sloganDisplay = document.getElementById('show-slogans');
 
+const reportChanges = document.getElementById('report');
+
 // let state
 let castleCount = 0;
 let waterCount = 0;
@@ -33,6 +35,7 @@ castleDrop.addEventListener('change', () => {
     castleImg.src = `./assets/${castleType}.png`;
 
   // update the stats to show the new count (call displayStats() to do this work)
+    displayStats();
 
 });
 
@@ -50,6 +53,7 @@ waterDrop.addEventListener('change', () => {
     waterImg.src = `./assets/${waterType}.png`;
 
   // update the stats to show the new count (call displayStats() to do this work)
+    displayStats();
 
 });
 
@@ -67,6 +71,7 @@ skyDrop.addEventListener('change', () => {
     skyImg.src = `./assets/${skyType}.png`;
 
   // update the stats to show the new count (call displayStats() to do this work)
+    displayStats();
 
 });
 
@@ -98,5 +103,11 @@ function showSlogans() {
 
         sloganDisplay.append(sloganP);
     }
+
+}
+
+function displayStats() {
+
+    reportChanges.textContent = `You have changed your castle ${castleCount} times, your water ${waterCount} times, and your sky ${skyCount} times.`;
 
 }
