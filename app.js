@@ -13,7 +13,7 @@ const sloganDisplay = document.getElementById('show-slogans');
 
 const cityInput = document.getElementById('city-input');
 const cityButton = document.getElementById('city-button');
-const cityNameEl = document.getElementById('city-name-here')
+const cityNameEl = document.getElementById('city-name-here');
 
 const reportChanges = document.getElementById('report');
 
@@ -22,10 +22,12 @@ let castleCount = 0;
 let waterCount = 0;
 let skyCount = 0;
 
-let cityName = '';
-
-
 let slogans = [];
+
+let castles = [];
+let water = [];
+let sky = [];
+
 
 // set event listeners 
 castleDrop.addEventListener('change', () => {

@@ -99,3 +99,8 @@ footer {
     display: grid-template-columns
 
 }
+
+#welcome {
+    display: flex;
+    justify-content: center;
+}
