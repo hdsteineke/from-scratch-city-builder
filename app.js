@@ -112,7 +112,7 @@ function showSlogans() {
       
         const sloganP = document.createElement('p');
         sloganP.classList.add('slogan');
-        sloganP.textContent = slogan;
+        sloganP.textContent = cityInput.value + ': ' + slogan; 
 
         sloganDisplay.append(sloganP);
     }
