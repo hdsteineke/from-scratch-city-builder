@@ -71,16 +71,6 @@ skyDrop.addEventListener('change', () => {
 });
 
 
-sloganInput.addEventListener('input', () => {
-
-    const newSlogan = sloganInput.value;
-
-    slogans.push(newSlogan);
-
-
-});
-
-
 
 sloganButton.addEventListener('click', () => {
 
@@ -88,11 +78,10 @@ sloganButton.addEventListener('click', () => {
 
     slogans.push(newSlogan);
 
-    sloganInput.value = ' ';
+    sloganInput.value = '';
 
     showSlogans();
 
-    console.log(newSlogan);
   
 
 });
@@ -100,5 +89,14 @@ sloganButton.addEventListener('click', () => {
 function showSlogans() {
 
     sloganDisplay.textContent = '';
+
+    for (let slogan of slogans) {
+      
+        const sloganDiv = document.createElement('div');
+        sloganDiv.classList.add('slogan');
+        sloganDiv.textContent = slogan;
+
+        sloganDisplay.append(sloganDiv);
+    }
 
 }
