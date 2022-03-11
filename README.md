@@ -25,6 +25,7 @@ Additional considerations:
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
 
+![city builder wireframe](/assets/wireframe.PNG "wireframe")
 
 MY PLAN:
 - Draw wireframe
