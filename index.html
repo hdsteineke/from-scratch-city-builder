@@ -15,53 +15,91 @@
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
+            <h2>
+                Welcome to Postcard Printer!
+            </h2>
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+        <div class="top">
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+            <div class="dropdowns">
+                <label id="'castle-label">Castles
+                <select class="pickers" id="castle-dropdown">
+                    <option value="castle-1">Castle 1</option>
+                    <option value="castle-2">Castle 2</option>
+                    <option value="castle-3">Castle 3</option>
+                </select>
+                </label>
 
-        </section>
+                <label id="'water-label">Water
+                <select class="pickers" id="water-dropdown">
+                    <option value="water-1">Water 1</option>
+                    <option value="water-2">Water 2</option>
+                    <option value="water-3">Water 3</option>
+                </select>
+                </label>
+
+                <label id="'sky-label">Sky
+                <select class="pickers" id="sky-dropdown">
+                    <option value="sky-1">Sky 1</option>
+                    <option value="sky-2">Sky 2</option>
+                    <option value="sky-3">Sky 3</option>
+                </select>
+                </label>
+
+
+                <label id="city-label">
+                    City Name:
+                    <input id="city-input"/>
+                    <button id="city-button">Add city</button>
+                </label>
+
+
+                <label id="slogan-label">
+                    Add a slogan
+                    <input id="slogan-input"/>
+                    <button id="slogan-button">Add slogan</button>
+                </label>
+
+                <p id="report"></p>
+                <div class="city-images">
+                    <img class="images" id="castle-img" src="assets/castle-1.PNG">
+                    <img class="images" id="water-img" src="assets/water-1.PNG">
+                    <img class="images" id="sky-img" src="assets/sky-1.PNG">
+    
+                </div>
+                <div id="welcome">
+                    <h1>Welcome to <span id="city-name-here"></span>!
+                    </h1>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="bottom">
+            <div class="postcard">
+                <div class="left-img">                    
+                </div>
+                <div class="'center-img">
+                </div>
+                <div class="right-img">
+                </div>
+            </div>
+
+
+
+            <div id="stats">
+                <!-- <p id="report"></p> -->
+                <div id="show-slogans">
+
+                </div>
+            </div>
+
+        </div>
+
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
